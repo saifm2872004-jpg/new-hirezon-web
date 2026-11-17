@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html data-page="about" dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title id="metaTitle">About Us | New Horizon Guangzhou Trading</title>
+  <meta content="Learn about New Horizon, its vision, mission, and goals." id="metaDesc" name="description" />
+  <meta
+    content="China sourcing, Guangzhou trading, import export, quality control, factory audit, global shipping, OEM, spare parts"
+    name="keywords" />
+  <meta content="New Horizon Guangzhou Trading Co., LTD | From the Heart of China" property="og:title" />
+  <meta content="Sourcing | Quality Control | Factory Audits | Global Shipping — Powering Your Success Worldwide."
+    property="og:description" />
+  <meta content="website" property="og:type" />
+  <meta
+    content="https://images.pexels.com/photos/40748343/pexels-photo-40748343.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200"
+    property="og:image" />
+  <meta content="#081226" name="theme-color" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Cairo:wght@300;400;500;600;700;800;900&amp;family=Marcellus&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23081226'/%3E%3Cpath d='M14 42 L32 12 L50 42' stroke='%23C9A86A' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='18' y1='36' x2='46' y2='36' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='32' cy='44' r='3' fill='%23C9A86A'/%3E%3C/svg%3E"
+    rel="icon" />
+  <link href="data/css/main.css" rel="stylesheet" />
+  <style>
+    /* Content clarity enhancements */
+    .section-explainer {
+      max-width: 75ch;
+      margin: 14px auto 30px;
+      font-size: 1.02rem;
+      line-height: 1.85;
+      color: #53627b;
+      text-align: center
+    }
+
+    #about .section-explainer,
+    #sourcing .section-explainer {
+      margin: 15px 0 24px;
+      text-align: start
+    }
+
+    #services .section-explainer,
+    #projects .section-explainer,
+    #contact .section-explainer {
+      margin-inline: auto
+    }
+
+    .section-explainer-light {
+      color: #d8e2f1;
+      margin: 0 0 20px
+    }
+
+    .hero-description {
+      max-width: 60ch;
+      font-size: 1.08rem;
+      line-height: 1.8;
+      color: #eef3fa;
+      margin: 18px 0 28px
+    }
+
+    .process-note {
+      font-size: .9rem;
+      line-height: 1.7;
+      color: #d6e3f5;
+      text-align: center;
+      padding: 10px
+    }
+
+    html[dir=rtl] .section-explainer {
+      text-align: right
+    }
+
+    html[dir=rtl] #services .section-explainer,
+    html[dir=rtl] #contact .section-explainer,
+    html[dir=rtl] #projects .section-explainer {
+      text-align: center
+    }
+
+    @media(max-width:950px) {
+      #mainNav a {
+        font-size: .76rem
+      }
+
+      .hero-description {
+        font-size: 1rem
+      }
+    }
+
+    /* Official business document — isolated to the About page */
+    .nh-document-section {
+      padding: 84px 0;
+      background: linear-gradient(145deg, #f4f7fb 0%, #fff 72%);
+    }
+
+    .nh-document-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr);
+      gap: clamp(24px, 5vw, 72px);
+      align-items: center;
+    }
+
+    .nh-document-frame {
+      position: relative;
+      padding: clamp(12px, 2.4vw, 24px);
+      border: 1px solid #d9e0e9;
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 24px 65px rgba(8, 18, 38, .10);
+    }
+
+    .nh-document-frame::before {
+      content: '';
+      position: absolute;
+      inset: -7px 26px auto;
+      height: 5px;
+      background: linear-gradient(90deg, #b78c48, #e8c987);
+      border-radius: 5px;
+    }
+
+    .nh-document-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      border: 1px solid #e8eaf0;
+      border-radius: 8px;
+    }
+
+    .nh-document-info .eyebrow {
+      margin-bottom: 18px;
+    }
+
+    .nh-document-info .h2 {
+      margin-bottom: 16px;
+    }
+
+    .nh-document-info .nh-document-desc {
+      max-width: 52ch;
+      line-height: 1.95;
+      color: #53627b;
+      margin-bottom: 25px;
+    }
+
+    .nh-document-tag {
+      display: inline-flex;
+      gap: 9px;
+      align-items: center;
+      font-size: .81rem;
+      font-weight: 700;
+      background: #eaf0f6;
+      border: 1px solid #d8e3ed;
+      border-radius: 100px;
+      padding: 9px 14px;
+      color: #173154;
+      margin-bottom: 22px;
+    }
+
+    .nh-document-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .nh-document-actions .btn {
+      text-decoration: none;
+    }
+
+    .nh-document-note {
+      margin-top: 18px;
+      font-size: .82rem;
+      color: #6e7c90;
+      line-height: 1.8;
+    }
+
+    @media(max-width:800px) {
+      .nh-document-section {
+        padding: 55px 0
+      }
+
+      .nh-document-layout {
+        grid-template-columns: 1fr;
+        gap: 27px
+      }
+
+      .nh-document-info {
+        order: 0
+      }
+
+      .nh-document-frame {
+        order: 1;
+        max-width: 620px;
+        width: 100%;
+        margin: auto
+      }
+    }
+
+    @media(max-width:460px) {
+      .nh-document-actions {
+        display: grid;
+        grid-template-columns: 1fr
+      }
+
+      .nh-document-actions .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center
+      }
+    }
+  </style>
+  <meta content="about" name="page-section" />
+</head>
+
+<body>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-links">
+        <span style="display:inline-flex;align-items:center;gap:8px"><span class="dot"></span><span
+            data-ar="قوانغتشو · الصين — شريككم التجاري العالمي"
+            data-en="Guangzhou · China — Global Trading Partner">Guangzhou · China — Global Trading
+            Partner</span></span>
+        <a aria-label="Email" class="hide-m" href="mailto:Info@newhorizon-gz.com">✉️ <span
+            dir="ltr">Info@newhorizon-gz.com</span></a>
+      </div>
+      <div class="topbar-links">
+        <a class="hide-m" href="https://www.newhorizon-gz.com" rel="noopener" target="_blank">🌐 <span
+            dir="ltr">www.newhorizon-gz.com</span></a>
+        <span class="hide-m" style="opacity:.5">|</span>
+        <span style="font-weight:700;color:var(--gold-2)">GMT+8 · Guangzhou</span>
+      </div>
+    </div>
+  </div>
+  <!-- HEADER -->
+  <header class="site" id="siteHeader">
+    <div class="container header-inner">
+      <a aria-label="New Horizon home" class="brand" href="index.html">
+        <span aria-hidden="true" class="brand-mark">
+          <img alt="" src="data/img/New_Horizon_Logo_Transparent.png"
+            style="background-color: white; background-position: center;" />
+        </span>
+        <span class="brand-text">
+          <strong dir="ltr" style="color: black;">New Horizon</strong>
+          <small data-ar="قوانغتشو للتجارة" data-en="Guangzhou Trading" style="color: #9a7b3f;">Guangzhou
+            Trading</small>
+        </span>
+      </a>
+      <nav aria-label="Main navigation" class="nav" id="mainNav"><a data-ar="الرئيسية" data-en="Home"
+          href="index.html">Home</a><a aria-current="page" class="active" data-ar="من نحن" data-en="About Us"
+          href="about.html">About Us</a><a data-ar="المنتجات والحلول" data-en="Products"
+          href="products.html">Products</a><a data-ar="خدماتنا" data-en="Services" href="services.html">Services</a><a
+          data-ar="الشحن" data-en="Shipping" href="shipping.html">Shipping</a><a data-ar="أعمالنا"
+          data-en="Selected Work" href="projects.html">Selected Work</a><a data-ar="تواصل معنا" data-en="Contact"
+          href="contact.html">Contact</a></nav>
+      <div class="header-actions">
+        <div aria-label="Language switcher" class="lang-switch" role="group">
+          <button aria-label="Switch to English" aria-pressed="true" class="on" id="btnEn" title="Switch to English"
+            type="button">English</button>
+          <button aria-label="التبديل إلى العربية" aria-pressed="false" id="btnAr" title="التحويل إلى العربية"
+            type="button">العربية</button>
+        </div>
+        <a class="btn btn-dark" data-ar="تواصل معنا" data-en="Get in Touch" href="contact.html"
+          style="padding:11px 22px">Get in Touch</a>
+        <button aria-controls="drawer" aria-expanded="false" aria-label="Open menu" class="burger"
+          data-ar-aria="فتح القائمة" data-en-aria="Open menu" id="burger"
+          type="button"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <!-- MOBILE DRAWER -->
+  <div aria-hidden="true" class="drawer" id="drawer" inert="">
+    <div class="drawer-bg" id="drawerBg"></div>
+    <aside aria-label="Menu" class="drawer-panel" role="dialog">
+      <div class="drawer-head">
+        <div style="display:flex;align-items:center;gap:10px">
+
+          <span class="brand-mark" style="width:55px;height:55px;">
+            <img src="data/img/New_Horizon_Logo_Transparent.png" alt="New Horizon Logo"
+              style="width:100%;height:100%;object-fit:contain;background:white;">
+          </span>
+          <span brand-text>
+            <strong dir="ltr" style="font-size:.95rem">New Horizon</strong> <br>
+            <small data-ar="قوانغتشو للتجارة" data-en="Guangzhou Trading"
+              style="color: #9a7b3f;  position: relative; bottom: 5px;  ">Guangzhou
+              Trading</small>
+          </span>
+        </div>
+        <button aria-label="Close" class="close-x" data-ar-aria="إغلاق القائمة" data-en-aria="Close menu"
+          id="drawerClose" type="button">✕</button>
+      </div>
+      <nav id="drawerNav"><a data-ar="الرئيسية" data-en="Home" href="index.html">Home<span aria-hidden="true"
+            class="drawer-chevron">›</span></a><a aria-current="page" class="active" data-ar="من نحن" data-en="About Us"
+          href="about.html">About Us<span aria-hidden="true" class="drawer-chevron">›</span></a><a
+          data-ar="المنتجات والحلول" data-en="Products" href="products.html">Products<span aria-hidden="true"
+            class="drawer-chevron">›</span></a><a data-ar="خدماتنا" data-en="Services"
+          href="services.html">Services<span aria-hidden="true" class="drawer-chevron">›</span></a><a data-ar="الشحن"
+          data-en="Shipping" href="shipping.html">Shipping<span aria-hidden="true" class="drawer-chevron">›</span></a><a
+          data-ar="أعمالنا" data-en="Selected Work" href="projects.html">Selected Work<span aria-hidden="true"
+            class="drawer-chevron">›</span></a><a data-ar="تواصل معنا" data-en="Contact"
+          href="contact.html">Contact<span aria-hidden="true" class="drawer-chevron">›</span></a></nav>
+      <div style="display:grid;gap:10px;margin-top:22px">
+        <div class="lang-switch"
+          style="justify-content:center;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)">
+          <button aria-pressed="true" class="on" id="btnEnM" title="Switch to English" type="button">English</button>
+          <button aria-pressed="false" id="btnArM" title="التحويل إلى العربية" type="button">العربية</button>
+        </div>
+        <a class="btn btn-gold drawer-cta" data-ar="تواصل معنا" data-en="Get in Touch" href="contact.html">Get in
+          Touch</a>
+        <p dir="ltr" style="font-size:.78rem;color:#8A97B3;text-align:center">Info@newhorizon-gz.com ·
+          www.newhorizon-gz.com</p>
+      </div>
+    </aside>
+  </div>
+  <main>
+    <div class="page-intro">
+      <div class="container">
+        <div class="page-kicker" data-ar="NEW HORIZON · قوانغتشو" data-en="NEW HORIZON · GUANGZHOU">NEW HORIZON ·
+          GUANGZHOU</div>
+        <h1 data-ar="من نحن" data-en="About Us">About Us</h1>
+        <p data-ar="تعرف على نيو هورايزون ورؤيتها ورسالتها وقيمها."
+          data-en="Learn about New Horizon, its vision, mission, and goals.">Learn about New Horizon, its vision,
+          mission, and goals.</p>
+        <div class="page-crumb"><a data-ar="الرئيسية" data-en="Home" href="index.html">Home</a><span
+            aria-hidden="true">/</span><span data-ar="من نحن" data-en="About Us">About Us</span></div>
+      </div>
+    </div>
+    <!-- HERO -->
+
+
+    <!-- ABOUT -->
+    <section aria-label="About" id="about">
+      <div class="container">
+        <span class="eyebrow reveal" data-ar="01 — من نحن" data-en="01 — About Us">01 — About Us</span>
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <div class="about-exp"><strong dir="ltr">GZ</strong><small data-ar="قلب التجارة الصينية"
+                data-en="Heart of China Trade">Heart of China Trade</small></div>
+            <div class="main-img"><img alt="Guangzhou illuminated bridge and skyline at night" width="1200" height="800"
+                src="data/img/Screenshot (9).png" /></div>
+            <div class="about-float"><span class="n">◈</span>
+              <div><strong data-ar="نيو هورايزن قوانغتشو للتجارة المحدودة"
+                  data-en="New Horizon Guangzhou Trading Co., LTD" style="font-size:.92rem">New Horizon Guangzhou
+                  Trading Co., LTD</strong><small data-ar="حي تيانهه، مدينة قوانغتشو"
+                  data-en="Tianhe District, Guangzhou City" style="color:var(--muted);font-size:.78rem">Tianhe District,
+                  Guangzhou City</small></div>
+            </div>
+          </div>
+          <div class="reveal reveal-d1">
+            <h2 class="h2"><span data-ar="شريككم في التوريد " data-en="Your sourcing partner ">Your sourcing partner
+              </span><em data-ar="من الصين." data-en="in China.">in Guangzhou.</em></h2>
+            <p class="section-explainer reveal"
+              data-ar="تعرف على الشركة وموقع عملها وكيف نساعد المستوردين والشركات في الشراء من الصين."
+              data-en="Who we are, where we operate, and how we support importers and businesses buying from China.">Who
+              we are, where we operate, and how we support importers and businesses buying from China.</p>
+            <p class="lead"
+              data-ar="شركة متخصصة في تقديم حلول تجارية متكاملة داخل السوق الصيني، وتتخذ من مدينة قوانجو - أحد أهم المراكز التجارية والصناعية في الصين - مقرًا رئيسيا لأعمالها."
+              data-en="A company specializing in providing comprehensive commercial solutions within the Chinese market, headquartered in Guangzhou, one of China's leading commercial and industrial hubs.">
+              New Horizon Guangzhou Trading Co., LTD is a Guangzhou-based international trading house...</p>
+            <ul class="check-list">
+              <li><span class="tick">✓</span><span
+                  data-ar="نمتلك خبرة عملية قوية فى مجال الاستيراد والتصدير. ونعمل على مساعدة عملائنا من مختلف دول العالم على الوصول إلى أفضل المنتجات والمصانع بأعلى جودة وأفضل سعر ممكن."
+                  data-en="A company specializing in providing comprehensive commercial solutions in the Chinese market, with its headquarters located in Guangzhou, one of China's leading commercial and industrial hubs.">Direct
+                  factory
+                  sourcing...</span></li>
+              <li><span class="tick">✓</span><span
+                  data-ar="يعتمد نجاحنا على فريق عمل محترف يتمتع بخبرة ميدانية عميقة داخل السوق الصيني، إلى جانب قدرات لغوية متعددة العربية - الإنجليزية - الصينية، مما يضمن تواصلا فعّانًا وسلسا مع الموردين والمصانع."
+                  data-en="Our success is driven by a professional team with extensive hands-on experience in the Chinese market, combined with multilingual capabilities in Arabic, English, and Chinese, ensuring smooth and effective communication with suppliers and factories">Pre-shipment
+                  inspection...</span>
+              </li>
+              <li><span class="tick">✓</span><span
+                  data-ar="نحن لا نقدم مجرد خدمات، بل نوفّر حلولًا متكاملة مبنية على الفهم الدقيق لاحتياجات العملاء، مع التزام كامل بالشفافية، الجودة والدقة في التنفيذ."
+                  data-en="We do not simply provide services; we deliver comprehensive solutions built on a thorough understanding of our clients' needs, with a full commitment to transparency, quality, and precision in execution">Consolidation,
+                  warehousing...</span></li>
+              <!-- <li><span class="tick">✓</span><span
+                  data-en="Business-travel support: factories, markets and meetings across China."
+                  data-ar="دعم رحلات الأعمال: المصانع والأسواق والاجتماعات في جميع أنحاء الصين.">Business-travel
+                  support...</span></li> -->
+            </ul>
+            <!-- <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="#mission" class="btn btn-dark"><span data-en="Our Mission & Vision" data-ar="مهمتنا ورؤيتنا">Our
+                  Mission & Vision</span></a>
+              <a href="#contact" class="btn btn-outline"><span data-en="Official Documents & Contact"
+                  data-ar="المستندات الرسمية والتواصل">Official Documents & Contact</span></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MISSION -->
+    <section aria-label="Mission" class="sec-dark" id="mission">
+      <div class="container" style="padding:20px 0">
+        <div class="center reveal"><span class="eyebrow" data-ar="02 — مهمتنا ورؤيتنا"
+            data-en="02 — Mission &amp; Vision" style="justify-content:center">02 — Mission &amp; Vision</span>
+          <h2 class="h2" style="color:#fff"><span data-ar="توجهنا، " data-en="Our direction, ">Our direction, </span><em
+              data-ar="وهدفنا." data-en="and our purpose.">and our purpose.</em></h2>
+          <p class="section-explainer reveal"
+            data-ar="رسالتنا توضح ما نقدمه لعملائنا اليوم، ورؤيتنا تحدد ما نسعى إليه مستقبلًا."
+            data-en="Our mission explains what we deliver today; our vision outlines the business we aim to build.">Our
+            mission explains what we deliver today; our vision outlines the business we aim to build.</p>
+          <p class="lead" data-ar="نُبسّط التوريد من الصين — نقلل المخاطر والتكاليف والتعقيد مع بناء شراكات تدوم."
+            data-en="We simplify China sourcing — reducing risk, cost and complexity while building partnerships that last."
+            style="color:#9AA8C6">We simplify China
+            sourcing...</p>
+        </div>
+        <div class="mv-grid">
+          <article class="mv-card reveal"><span class="mv-num">01</span>
+            <div class="mv-ic">🎯</div>
+            <h3 data-ar="مهمتنا" data-en="Our Mission">Our Mission</h3>
+            <p data-ar="تمكين عملائنا الدوليين بتوريد موثوق وشفاف وفعّال من حيث التكلفة من الصين — عبر منتجات عالية الجودة وموردين موثّقين ومراقبة جودة صارمة ولوجستيات سلسة من المورد إلى الوجهة."
+              data-en="To empower international clients with reliable, transparent and cost-effective sourcing from China — delivering high-quality products, verified suppliers, strict quality control and seamless logistics from supplier to destination.">
+              To empower international clients...</p>
+          </article>
+          <article class="mv-card reveal reveal-d1"><span class="mv-num">02</span>
+            <div class="mv-ic">🔭</div>
+            <h3 data-ar="رؤيتنا" data-en="Our Vision">Our Vision</h3>
+            <p data-ar="أن نكون الجسر العالمي الرائد بين التميز الصناعي الصيني وأسواق العالم — معروفين بالثقة والاحترافية والشراكات طويلة الأمد عبر الشرق الأوسط وأفريقيا وخارجهما."
+              data-en="To be a leading global bridge between Chinese manufacturing excellence and world markets — recognized for trust, professionalism and long-term partnerships across the Middle East, Africa and beyond.">
+              To be a leading global bridge...</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+
+    <!-- SOURCING -->
+
+    <!-- TRAVEL -->
+
+    <!-- SHIPPING -->
+
+    <!-- GOALS -->
+    <section aria-label="Goals" id="goals">
+      <div class="container">
+        <div class="center reveal"><span class="eyebrow" data-ar="07 — التزاماتنا" data-en="07 — Our Commitments"
+            style="justify-content:center">07 — Our Commitments</span>
+          <h2 class="h2" data-ar="ما الذي نقدمه لعملائنا" data-en="What You Can Expect">What You Can Expect</h2>
+          <p class="lead" data-ar="ست أولويات عملية نسترشد بها في التعامل مع طلبات التوريد والتجارة."
+            data-en="Six practical priorities that guide how we handle sourcing and trade enquiries.">Six practical
+            priorities that guide how we handle sourcing and trade enquiries.</p>
+        </div>
+        <div class="goals-grid">
+          <div class="goal reveal"><span class="gn">01</span>
+            <h4 data-ar="توفير منتجات عالية الجودة" data-en="Providing high-quality products">Providing high-quality
+              products</h4>
+            <p data-ar="ننسق فحص الموردين والمنتجات وفق نطاق العمل المتفق عليه."
+              data-en="Supplier and product checks are arranged according to the agreed scope.">Supplier and product
+              checks are arranged according to the agreed scope.</p>
+          </div>
+          <div class="goal reveal reveal-d1"><span class="gn">02</span>
+            <h4 data-ar="تقديم أسعار تنافسية" data-en="Competitive pricing">Competitive pricing</h4>
+            <p data-ar="نقارن عروض الأسعار ونتفاوض وفق متطلبات طلبك."
+              data-en="We compare quotations and negotiate based on your order requirements.">We compare quotations and
+              negotiate based on your order requirements.</p>
+          </div>
+          <div class="goal reveal reveal-d2"><span class="gn">03</span>
+            <h4 data-ar="تسهيل عمليات الاستيراد" data-en="Simplifying import operations">Simplifying import operations
+            </h4>
+            <p data-ar="شريك واحد للتوريد والأوراق والشحن." data-en="One partner for sourcing, papers and freight.">One
+              partner...</p>
+          </div>
+          <div class="goal reveal reveal-d3"><span class="gn">04</span>
+            <h4 data-ar="تقليل المخاطر والتكاليف" data-en="Reducing risks and costs">Reducing risks and costs</h4>
+            <p data-ar="تدقيق وجودة وتجميع يحمي هامش الربح."
+              data-en="Audits, QC and consolidation that protect margin.">Audits, QC...</p>
+          </div>
+          <div class="goal reveal"><span class="gn">05</span>
+            <h4 data-ar="بناء علاقات طويلة الأمد" data-en="Building long-term relationships">Building long-term
+              relationships</h4>
+            <p data-ar="تواصل شفاف يتجاوز الطلب الواحد." data-en="Transparent communication beyond a single order.">
+              Transparent communication...</p>
+          </div>
+          <div class="goal reveal reveal-d1"><span class="gn">06</span>
+            <h4 data-ar="التوسع في الأسواق الدولية" data-en="Expanding international markets">Expanding international
+              markets</h4>
+            <p data-ar="فتح الوصول إلى الصين لمناطق وقطاعات جديدة."
+              data-en="Opening China access for new regions &amp; sectors.">Opening China access...</p>
+          </div>
+          <!-- <div class="goal reveal reveal-d2"><span class="gn">07</span>
+            <h4 data-en="Strengthening international partnerships" data-ar="تعزيز الشراكات التجارية الدولية">
+              Strengthening international partnerships</h4>
+            <p data-en="Growing with clients as a trusted trade ally." data-ar="النمو مع العملاء كحليف تجاري موثوق.">
+              Growing with clients...</p>
+          </div> -->
+          <div class="goal reveal reveal-d3"
+            style="background:linear-gradient(145deg,#0B1D3A,#132E5A);border-color:rgba(201,168,106,.4)"><span
+              class="gn" style="color:var(--gold-2)">✦ NH</span>
+            <h4 data-ar="نجاحكم، بدعم من الصين." data-en="Your success, powered from China." style="color:#fff">
+              Your success, powered from Guangzhou.</h4>
+            <p data-ar="تحدثوا مع فريقنا عن استيرادكم القادم." data-en="Talk to our team about your next import."
+              style="color:#9AA8C6">Talk to our team...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OFFICIAL BUSINESS DOCUMENT: company-provided China business license -->
+    <section class="nh-document-section" id="official-document" aria-label="Official company document">
+      <div class="container nh-document-layout">
+        <div class="nh-document-frame reveal">
+          <a href="data/img/مستند رسمي للشركة.png" target="_blank" rel="noopener"
+            aria-label="Open company business license image in full size">
+            <img src="data/img/مستند رسمي للشركة.png" width="704" height="501"
+              alt="Official Chinese business license document supplied by New Horizon" />
+          </a>
+        </div>
+        <div class="nh-document-info reveal">
+          <span class="eyebrow" data-en="COMPANY DOCUMENTS" data-ar="مستندات الشركة">COMPANY DOCUMENTS</span>
+          <h2 class="h2" data-en="Official Business License" data-ar="الرخصة التجارية الرسمية">Official Business License
+          </h2>
+          <span class="nh-document-tag"><span aria-hidden="true">◆</span><span data-en="Business registration · China"
+              data-ar="التسجيل التجاري · الصين">Business registration · China</span></span>
+          <p class="nh-document-desc"
+            data-en="View the Chinese business license provided by New Horizon as part of our company documentation. The original document is presented here without altering its contents."
+            data-ar="اطّلع على الرخصة التجارية الصينية المقدمة من نيو هورايزون ضمن المستندات التعريفية بالشركة. ">View
+            the Chinese business license provided by New Horizon as part of our company documentation. The original
+            document is presented here without altering its contents.</p>
+          <div class="nh-document-actions">
+            <a class="btn btn-dark" href="data/img/مستند رسمي للشركة.png" target="_blank" rel="noopener"><span
+                data-en="View full document" data-ar="عرض المستند كاملًا">View full document</span> <span
+                aria-hidden="true">↗</span></a>
+            <a class="btn btn-outline" href="data/img/مستند رسمي للشركة.png"
+              download="New-Horizon-Business-License.png"><span data-en="Download document"
+                data-ar="تحميل المستند">Download document</span> <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="nh-document-note"
+            data-en="Document shown for reference; please contact the company for any official verification requirements."
+            data-ar="المستند معروض للاطلاع، ويمكن التواصل مع الشركة عند الحاجة إلى التحقق الرسمي.">Document shown for
+            reference; please contact the company for any official verification requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <!-- CONTACT -->
+
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <div style="display:flex;align-items:center;gap:12px"><span class="brand-mark">
+              <img alt="" src="data/img/New_Horizon_Logo_Transparent.png"
+                style="background-color: white;" />
+            </span>
+            <div>
+              <span class="brand-text">
+                <strong dir="ltr">New Horizon</strong>
+                <small data-ar="قوانغتشو للتجارة" data-en="Guangzhou Trading">Guangzhou Trading</small>
+              </span>
+            </div>
+          </div>
+          <!-- <p data-ar="شركة تجارة دولية مقرها قوانغتشو للسيارات والآليات الثقيلة وقطع الغيار والتوريد الصناعي والشحن العالمي DDP."
+            data-en="A Guangzhou-based international trading company specializing in vehicles, heavy machinery, spare parts, industrial sourcing, and global DDP shipping.">
+            Guangzhou-based international trading house...</p> -->
+          <div class="socials"><a aria-label="WhatsApp" href="https://wa.me/8619502075640" rel="noopener"
+              target="_blank">✆</a><a aria-label="Email" href="mailto:Info@newhorizon-gz.com">✉️</a>
+              <!-- <a
+              aria-label="Website" href="https://www.newhorizon-gz.com" rel="noopener" target="_blank">🌐</a> -->
+              <a
+              aria-label="Location" href="index.html">📍</a></div>
+        </div>
+        <div>
+          <h5 data-ar="روابط سريعة" data-en="Quick Navigation">Quick Navigation</h5>
+          <ul>
+            <li><a data-ar="الرئيسية" data-en="Home" href="index.html">Home</a></li>
+            <li><a data-ar="من نحن" data-en="About Us" href="about.html">About Us</a></li>
+            <li><a data-ar="مهمتنا ورؤيتنا" data-en="Mission &amp; Vision" href="about.html#mission">Mission &amp;
+                Vision</a></li>
+            <li><a data-ar="أهدافنا" data-en="Our Goals" href="about.html#goals">Our Goals</a></li>
+            <li><a data-ar="نماذج الأعمال" data-en="Selected Work" href="projects.html">Selected Work</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 data-ar="خدماتنا" data-en="Services">Services</h5>
+          <ul>
+            <li><a data-ar="السيارات" data-en="Cars" href="products.html">Cars</a></li>
+            <li><a data-ar=" دليل رحلات الاعمال الى الصين " data-en="Business Travel Guide to China"
+                href="products.html">Business Travel Guide to China</a></li>
+            <li><a data-ar="قطع الغيار" data-en="Spare Parts" href="products.html">Spare Parts</a></li>
+            <li><a data-ar="خدمات الشحن" data-en="Shipping Services" href="shipping.html">Shipping Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 data-ar="معلومات التواصل" data-en="Contact Information">Contact Information</h5>
+          <ul class="foot-contact">
+            <li>🇨🇳 <a dir="ltr" href="https://wa.me/8619502075640">+86 19502075640</a></li>
+            <li>🇸🇩 <a dir="ltr" href="https://wa.me/249915517777">+249 915517777</a></li>
+            <li>🇸🇦 <a dir="ltr" href="https://wa.me/966545267370">+966 545267370</a></li>
+            <li>✉️ <a dir="ltr" href="mailto:Info@newhorizon-gz.com">Info@newhorizon-gz.com</a></li>
+            <!-- <li>🌐 <a dir="ltr" href="https://www.newhorizon-gz.com">www.newhorizon-gz.com</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom"><span data-ar="© 2026 New Horizon Guangzhou Trading Co., LTD. جميع الحقوق محفوظة."
+          data-en="© 2026 New Horizon Guangzhou Trading Co., LTD. All Rights Reserved.">© 2026 New Horizon Guangzhou
+          Trading Co., LTD. All Rights Reserved.</span><span data-ar="من قلب الصين… نُعزّز نجاحكم حول العالم"
+          data-en="From the Heart of China… Powering Your Success Worldwide"
+          style="color:var(--gold-2);font-weight:700">From the Heart of China…</span></div>
+    </div>
+  </footer>
+  <!-- MODAL -->
+  <div aria-hidden="true" class="modal" id="projModal">
+    <div class="modal-bg" id="modalBg"></div>
+    <div aria-modal="true" class="modal-card" role="dialog"><img alt="Project image" id="modalImg"
+        src="" />
+      <div class="modal-body"><span class="proj-loc">◈ <span id="modalNo">01</span></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap"><a class="btn btn-dark" href="contact.html"
+            id="modalCta" style="padding:11px 22px"><span data-ar="اطلب مشروعًا مشابهًا"
+              data-en="Request Similar Project">Request Similar Project</span></a><button class="btn btn-outline"
+            id="modalClose" style="padding:11px 22px"><span data-ar="إغلاق" data-en="Close">Close</span></button></div>
+      </div>
+    </div>
+  </div>
+  <button aria-label="Back to top" class="to-top" id="toTop">↑</button>
+  <a aria-label="Chat on WhatsApp" class="wa-float" href="https://wa.me/8619502075640" rel="noopener"
+    target="_blank">✆</a>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="data/js/main.js"></script>
+</body>
+
+</html>
